@@ -3,7 +3,7 @@
     <head>
         <title>Top Rated E-Groceries Shop in Indonesian</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="CSS_Files/editorCSS.css">
+        <link rel="stylesheet" href="CSS_Files/Style.css">
     </head>
     <body>
         <header>
@@ -28,27 +28,49 @@
         </section>
         <section class="intro">
         <div id="gambar">
-            <img src="https://www.storandtfarms.com/wp-content/uploads/2017/08/Fresh-Ingredients-1024x585.png"></img>
-            <h3 class="pesan">"setiap hari beli sayur buah yang fresh disini"</h3>
+            <img src="asset/Groceries.jpg"></img>
+
+        <section id="review">
+            <div>
+            <img id="gambaruser" src="asset/user.jpg" width="75px" height="75px"></img>
+            </div>
+            <div id="user">
+                <h3 class="pesan">"setiap hari beli sayur buah yang fresh disini"</h3>
+                <h4> <b>Florence Hughes</b></h4>
+                <h5>Ibu Rumah Tangga, 28 tahun</h5>
+            </div>
+        </section>
+        </div>
         </div>
         <div id="kontak">
-            <form action="welcome.php" method="post">
+            <div>
+            <form id="formulir" method="post">
                 <fieldset>
                 <legend>Contact Us</legend>
+                <h3>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</h3>
                 <label for="name">Nama:</label>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" placeholder="Nama lengkap"><br><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" placeholder="Email aktif"><br><br>
                 <label for="cars">Pesanan:</label>
+                <label for="Nomor">Nomor Telepon:</label>
+                <input type="number" id="Nomor" name="Nomor" placeholder="Nomor yang aktif"><br><br>
+                <label for="Catatan">Catatan atau tambahan:</label>
+                <textarea rows = "6" cols = "30" name = "pesan" placeholder="Silahkan diisi"></textarea><br><br>
+                <label for="Pesanan" id="Pesanan" name="Pesanan">Pesanan paket:</label>
 <select id="pesan">
+  <option value="Paket 1"></option>
   <option value="Paket 1">Paket 1</option>
   <option value="Paket 2">Paket 2</option>
   <option value="Paket 3">Paket 3</option>
   <option value="Paket 4">Paket 4</option>
 </select>
-<input type="submit" value="Submit">
+<br>
+<button name="Order" type="submit" value="Order">Pesan!</button>
                 </fieldset>
             </form>
+        <div>
+            <!--ini nanti buat gambar iklan paket-->
         </div>
     </section>
     </body>

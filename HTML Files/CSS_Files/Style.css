@@ -8,13 +8,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: url('https://media.istockphoto.com/id/1198380802/vector/food-background-vegetables-seamless-pattern-healthy-eating-tomato-garlic-carrot-pepper.jpg?s=612x612&w=0&k=20&c=jHB3uTWZrakPyAgqSQfOApxSq_jIwHRx00LiOV2YHEk=');
+    background: url('C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/asset/backgroundheader.jpg');
     padding: 20px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url('https://media.istockphoto.com/id/1175676026/vector/hypermarket-store-food-appliances-clothes-toys-seamless-icons-background-pattern.jpg?s=612x612&w=0&k=20&c=ipTCrUea2qmjYN-l7EjRH7b4BrVFuvpOIupCahoI2cA=');
+    background-color: rgba(152, 251, 152, 0.541);
 }
 
 #Logo {
@@ -61,7 +61,6 @@ body {
 
   .subjudul{
     color: grey;
-    opacity: 75%;
     text-align: center;
     font-size: 40px;
   }
@@ -70,6 +69,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-grow: 0;
+    gap: 30px;
   }
 
   #gambar {
@@ -85,6 +85,24 @@ body {
   .pesan {
     text-align: center;
     color: gray;
-    opacity: 65%;
     font-style: italic;
+  }
+
+  #formulir {
+    background: url('C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/asset/phone.jpg');
+    
+  }
+
+  #gambaruser {
+    border-radius: 50%;
+  }
+  
+  #review {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    background-color: lightgreen;
+    gap: 50px;
   }
