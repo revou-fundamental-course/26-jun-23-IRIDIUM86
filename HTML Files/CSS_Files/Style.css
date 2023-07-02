@@ -15,17 +15,23 @@ header {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(152, 251, 152, 0.541);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 #Logo {
     width: 1;
     height: 1;
+    background-color: lightgreen;
+    border-radius: 40%;
 }
 
 #menu {
     display: flex;
     padding: 50px;
     gap: 10px;
+    justify-content: center;
 }
 
 .button {
@@ -90,7 +96,6 @@ body {
 
   #formulir {
     background: url('C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/asset/phone.jpg');
-    
   }
 
   #gambaruser {
@@ -103,6 +108,85 @@ body {
     display: flex;
     flex-direction: row;
     flex-grow: 0;
-    background-color: lightgreen;
     gap: 50px;
+    background-color: lightgreen;
+    border-radius: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
+  
+
+  #bujukan {
+background-color: lightgreen;
+text-align: center;
+padding: 50px;
+margin-left: 0px;
+margin-right: 0px;
+  }
+
+  .flex-container {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: url('C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/asset/farm.jpg');
+    border-radius: 12px;
+    border: 5px solid rgb(165, 108, 42);
+    justify-content: center;
+  }
+  
+  .flex-container > div {
+    background: url('C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/asset/keunggulan.jpg');
+    width: 500px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border-radius: 8px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+  #penutup {
+    text-align: center;
+padding: 50px;
+margin-left: 0px;
+margin-right: 0px;
+  }
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url('C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/asset/backgroundheader.jpg');
+    padding: 20px;
+}
+
+#Term {
+  gap: 20px;
+  background-color: white;
+}
