@@ -1,14 +1,33 @@
+function validateForm() {
+  let name = document.forms["formulir"]["name"].value;
+  let email = document.forms["formulir"]["email"].value;
+  let nomor = document.forms["formulir"]["Nomor"].value;
+
+  if (name === "") {
+    alert("Mohon isi nama anda.");
+    return false;
+  }
+
+  if (email === "") {
+    alert("Mohon isi email anda.");
+    return false;
+  }
+
+  if (nomor === "") {
+    alert("Mohon isi nomor anda.");
+    return false;
+  }
+}
+
 function saveFormData(event) {
     event.preventDefault();
 
-    // Retrieve data from the HTML form
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
     var Nomor = document.getElementById("Nomor").value;
-    var Pesanan = document.getElementById("Pesanan").value;
-    var pesan = document.getElementById("pesan").value;
+    const Pesanan = document.getElementById("pesanan").value;
+    const pesan = document.getElementById("pesan").value;
 
-    // Create an object to store the form data
     var formData = {
       name: name,
       email: email,
@@ -17,11 +36,8 @@ function saveFormData(event) {
       pesan: pesan
     };
 
-    // Convert the object to a JSON string
     var jsonData = JSON.stringify(formData);
 
-    // Save the data to Local Storage
     localStorage.setItem("formData", jsonData);
 
-    // Redirect or perform any other desired action
     window.location.href = "C:/Users/Owner/Downloads/latihan/Main Project/HTML Files/Additional HTML/thank-you.html";}

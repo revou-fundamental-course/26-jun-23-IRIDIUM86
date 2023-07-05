@@ -41,9 +41,10 @@
         </section>
         </div>
         </div>
+
         <div id="kontak">
             <div>
-            <form id="formulir" method="post">
+                <form name="formulir" method="post" id="formulir" onsubmit="return validateForm(event)">
                 <fieldset>
                 <legend>PESAN</legend>
                 <h3>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</h3>
@@ -58,19 +59,17 @@
                 <input type="number" id="Nomor" name="Nomor" placeholder="Nomor yang aktif" required><br><br>
                 <label for="Catatan">Pesanan:</label>
                 <br>
-                <textarea rows = "6" cols = "30" name = "pesan" placeholder="Ketika sudah dipesan, kami akan menghubungianda akan ketersediaan pesanan anda"></textarea><br><br>
-                <label for="Pesanan" id="Pesanan" name="Pesanan">Pesanan paket:</label>
-<select id="pesan" name="paket">
-  <option value="Paket 1"></option>
-  <option value="Paket 1">Paket 1</option>
-  <option value="Paket 2">Paket 2</option>
-  <option value="Paket 3">Paket 3</option>
-  <option value="Paket 4">Paket 4</option>
-</select>
-<br>
+                <textarea rows = "6" cols = "30" id="pesanan"name = "pesan" placeholder="Ketika sudah dipesan, kami akan menghubungianda akan ketersediaan pesanan anda"></textarea><br><br>
+                <label for="Pesanan">Pesanan paket:</label>
+                <select id="pesan" name="paket">
+                    <option value=""></option>
+                    <option value="Paket 1">Paket 1</option>
+                    <option value="Paket 2">Paket 2</option>
+                    <option value="Paket 3">Paket 3</option>
+                    <option value="Paket 4">Paket 4</option>
+                  </select>
 <br>
 <button class="button button1" type="submit" value="Order" style="width: 100%;" onclick="saveFormData(event)">Pesan!</button>
-<script src="Java Files/validasi.js"></script>
 <script src="Java Files/Form.js"></script>
 <br>
                 </fieldset>
@@ -106,9 +105,6 @@
         <img src="asset/Pahala 4.png" style="width:400px">
         <div class="text">Paket 4</div>
       </div>
-  
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
   
@@ -116,6 +112,7 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
   </div>
 <script src="Java Files/Slideshow.js"></script>
         </body>
@@ -130,13 +127,17 @@
             <div class="zoom"><b>Semuanya dijamin fresh</b></div>
             <div class="zoom"><b> Kualitas dijamin terjaga </b></div>
             <div class="zoom"><b>Quick and safe delivery</b></div> 
-            <div class="zoom"><b>Lengkap</b></div>
+            <div class="zoom"><b>Lengkap dan praktis</b></div>
             <div class="zoom"><b>Pegawai sudah terlatih</b></div>
-            <div class="zoom"><b>Garansi selama seminggu</b></div>
+            <div class="zoom"><b>Garansi selama 2 x 24jam</b></div>
           </div>
     </div>
     <div>
-        <h3 id="penutup"><p>
+        <h3 id="penutup">
+        <p>
+            GreenMart sudah bekerja sama dengan ratusan perusahaan demi melengkapi semua kebutuhan yang anda butuhkan. Bahan bahan mentah juga dijamin fresh karena kami juga bekerja sama dengan petani dan peternak yang sudah expert di bidangnya. Semua pekerja di GreenMart juga sudah berpengalaman semua demi kenyamanan anda. Pengiriman juga dipastikan aman dan cepat demi menjaga kualitas tetap fresh dan terjaga. Ditambah dengan program garansi, anda tidak perlu takut jika ada pesanan yang anda terima ternyata rusak, kami akan menggantikannya dengan yang baru.
+        </p>
+        <p>
             Ayo, tunggu apa lagi? Pesan sekarang, dijamin pesanan akan sampai dengan aman dan fresh!<div id="menu"><a href="#subjudul"><button class="button button1"><b>Pesan</b></button></a></div>
         </p></h3>
     </div>
@@ -146,8 +147,8 @@
         </div>
         <br>
         <div id="Term">
-            <a href="">Term of Service</a>
-            <a href="">Privacy Policy</a>
+            <a href="Additional HTML/Term of service.html">Term of Service</a>
+            <a href="Additional HTML/Privacy policy.html">Privacy Policy</a>
         </div>
         <div>
             <h6>@2023 GreenMart</h6>

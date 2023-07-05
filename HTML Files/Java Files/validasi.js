@@ -1,23 +1,20 @@
-document.getElementById("formulir").addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    var nameInput = document.getElementById("name");
-    if (nameInput.value.trim() === "") {
-      alert("Mohon masukan nama anda.");
-      nameInput.focus();
-      return;
+function validateForm() {
+  let name = document.forms["formulir"]["name"].value;
+  let email = document.forms["formulir"]["email"].value;
+  let nomor = document.forms["formulir"]["Nomor"].value;
 
-      var nameInput = document.getElementById("email");
-      if (nameInput.value.trim() === "") {
-        alert("Mohon masukan email anda.");
-        nameInput.focus();
-        return;
-      }
+  if (name === "") {
+    alert("Mohon isi nama anda.");
+    return false;
+  }
 
-      var nameInput = document.getElementById("Nomor");
-      if (nameInput.value.trim() === "") {
-        alert("Mohon masukan nomor anda.");
-        nameInput.focus();
-        return;
-      }
-    }});
+  if (email === "") {
+    alert("Mohon isi email anda.");
+    return false;
+  }
+
+  if (nomor === "") {
+    alert("Mohon isi nomor anda.");
+    return false;
+  }
+}
