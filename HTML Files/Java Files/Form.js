@@ -39,4 +39,4 @@ function saveFormData(event) {
 
     localStorage.setItem("formData", jsonData);
 
-    window.location.href = "Additional HTML/thank-you.html";}
+    window.location.href = "../Additional HTML/thank-you.html";}
