@@ -1,4 +1,13 @@
-function validateForm() {
+function saveFormData(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    var Nomor = document.getElementById("Nomor").value;
+    const Pesanan = document.getElementById("pesanan").value;
+    const pesan = document.getElementById("pesan").value;
+
+    {
   let name = document.forms["formulir"]["name"].value;
   let email = document.forms["formulir"]["email"].value;
   let nomor = document.forms["formulir"]["Nomor"].value;
@@ -18,16 +27,6 @@ function validateForm() {
     return false;
   }
 }
-
-function saveFormData(event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    var Nomor = document.getElementById("Nomor").value;
-    const Pesanan = document.getElementById("pesanan").value;
-    const pesan = document.getElementById("pesan").value;
-
     var formData = {
       name: name,
       email: email,
